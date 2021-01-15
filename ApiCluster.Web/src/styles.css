@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+.btn.btn-purple {
+    background-color: #6b72fd;
+}
+
+.btn.btn-outline-purple {
+    border-color: #c86ce3;
+}
