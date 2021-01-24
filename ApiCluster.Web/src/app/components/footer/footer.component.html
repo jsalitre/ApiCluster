@@ -1,27 +1,28 @@
 <footer class="p-5 pb-5 bg-dark bottom-fixed text-white">
     <div class="container">
-<div class="row">
-        <div class="col-md-6">
-            <ul class="list-unstyled">
-                <li>
-                    <a class="nav-link" href="#">
-                    About
-                </a></li>
-                <li>FAQ</li>
-                <li>Support</li>
-                <li>Monetize my data</li>
-                <li>Contacts</li>
-            </ul>
-        </div>
-        <div class="col-md-6">
-            
-        </div>
-        <div class="col-md-12 mt-5">
-            <p class="m-0 text-rigth text-white">Copyright ©  {{currentYear}}</p>
-        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <ul class="list-unstyled">
+                    <li>
+                        <a [routerLink]="['/']" routerLinkActive="router-link-active">Home</a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['/pages/howitworks']" routerLinkActive="router-link-active">FAQ</a>
+                    </li>
+                    <li>Support</li>
+                    <li>Monetize my data</li>
+                    <li>Contacts</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+
+            </div>
+            <div class="col-md-12 mt-5">
+                <p class="m-0 text-rigth text-white">Copyright © {{currentYear}}</p>
+            </div>
 
 
+        </div>
     </div>
-</div>
-    
+
 </footer>

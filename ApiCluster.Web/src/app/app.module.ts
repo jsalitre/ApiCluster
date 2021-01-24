@@ -10,6 +10,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HowitworksComponent } from './pages/howitworks/howitworks.component';
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { WellComponent } from './components/well/well.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
     FooterComponent,
     HowitworksComponent,
     LandingPageComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    WellComponent
   ],
   imports: [
     BrowserModule,

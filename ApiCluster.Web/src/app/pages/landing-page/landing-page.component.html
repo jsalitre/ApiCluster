@@ -1,43 +1,13 @@
+<app-intro-search></app-intro-search>
 
-    <app-intro-search></app-intro-search>
-  
-    <div class="row mt-5 mb-5 h-100">
-      <hr>
-    </div>
-  
-    <div class="row mt-3 mb-5">
-      <div class="col-lg-8">
-        <h1 class="font-weight-light">Collaborate</h1>
-        <p>
-          Do you have any data forgotten somewhere ? Share you're data source with members from all over the world.
-          <br>
-          Give it to the Community.
-  
-          
-        </p>
-        <a class="btn btn-purple text-white">Want to learn more ?</a>
-      </div>
-      <div class="col-lg-4">
-        <img class="img-fluid rounded mb-4 mb-lg-0" src="../assets/collaborate.svg" alt="">
-      </div>
-  
-    </div>
-    <div class="row mt-5 mb-5 h-100">
-      <hr>
-    </div>
-    <div class="row mt-5 mb-3">
-      <div class="col-lg-4">
-        <img class="img-fluid rounded mb-4 mb-lg-0" src="../assets/application.svg" alt="">
-      </div>
-  
-      <div class="col-lg-8">
-  
-        <h1 class="font-weight-light">Build your app faster</h1>
-        <p>
-          Do you have an ideia for building something great ? Make you're app great buy having data
-        </p>
-        <a class="btn  btn-purple btn-outline-purple text-white">Request</a>
-      </div>
-  
-  
-    </div>
+
+<div *ngFor="let well of wells">
+
+
+<div class="row mt-5 mb-5 h-100">
+  <hr>
+</div>
+
+  <app-well [well]=well></app-well>
+ 
+</div>
