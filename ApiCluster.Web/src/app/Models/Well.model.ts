@@ -6,13 +6,19 @@ export class Well {
     linkTitle: string = "";
     routeLink: string = "";
 
-    constructor(title:string, message?:string, odd?: boolean, resource?:string, linkText?:string, routeLink?: string) {
-        this.title= title; 
-        this.message = message || "";
-        this.odd = odd || false;
-        this.resource = resource || "";
-        this.linkTitle = linkText || "";
-        this.routeLink = routeLink || ""; 
+    constructor() {
+        
     }
+    
 
+    createNew(title: string, message?:string, odd?:boolean, resource?:string, linkText?:string, routeLink?:string) {
+        var well = new Well();
+        well.title = title;
+        well.message = message || "";
+        well.odd = odd || false;
+        well.resource = resource || "";
+        well.linkTitle = linkText || "";
+        well.routeLink = routeLink || "";
+        return well;
+    }
 };

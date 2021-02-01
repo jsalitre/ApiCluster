@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Well } from 'src/app/Models/Well.model';
 
 @Component({
   selector: 'app-intro-search',
@@ -7,7 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IntroSearchComponent implements OnInit {
 
-  constructor() { }
+  @Input() well: Well;
+  constructor() { 
+
+
+    
+    this.well = new Well().createNew("Api Cluster", "", false, "../assets/location_search.svg");
+
+  }
 
   ngOnInit(): void {
   }

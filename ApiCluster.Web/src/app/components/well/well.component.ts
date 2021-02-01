@@ -10,18 +10,15 @@ export class WellComponent implements OnInit {
 
   showButton: boolean = false;
   
-  @Input() well: Well;
+  @Input() well:Well;
 
-  constructor(well: Well) { 
-    this.well = well;
+  constructor() { 
+    this.well = new Well();
   }
 
-  
-
-
   ngOnInit(): void {
-    
-    this.showButton = this.well.routeLink.length > 0;
+   
+    //this.showButton = this.well.routeLink.length > 0;
   }
 
 }
